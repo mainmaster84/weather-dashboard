@@ -79,7 +79,7 @@ button.addEventListener('click',function(){
     humidity5.innerHTML = "Humidity:" + " " + humidityValue5 + " " + '%';
     
   })
-  
+  JSON.parse(localStorage.getItem("cityName"));
   localStorage.setItem("cityName", JSON.stringify(cityName));
-
+  console.log(localStorage);
 })
